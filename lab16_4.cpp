@@ -17,3 +17,22 @@ int main(){
 	
 	return 0;
 }
+
+void shuffle(int &a,int &b,int &c,int &d)
+{
+	int Q[4] = {};
+
+	int i = rand()%4;
+	Q[i] = 50 ;
+	do{ i = rand()%4;	}while (Q[i]!=0);
+	Q[i] = 100 ;
+	do{ i = rand()%4;	}while (Q[i]!=0);
+	Q[i] = 500 ;
+	do{ i = rand()%4;	}while (Q[i]!=0);
+	Q[i] = 1000 ;
+
+	a=Q[0];
+	b=Q[1];
+	c=Q[2];
+	d=Q[3];
+}
